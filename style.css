@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.carta{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 250px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.barra_cabecera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    border-bottom: 1px solid black;
+}
+
+.barra_cabecera > p, .valores_carta > p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo_carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 320px;
+}
+
+.imagen_cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border: 1px solid black;
+    width: 100%;
+    width: 94%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.imagen_cuerpo > img{
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.info_cuerpo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    border: 1px solid black;
+    width: 94%;
+    flex-direction: column;
+    background-color: white;
+}
+
+.valores_carta > p{
+    width: 130px;
+    justify-content: space-between;
+}
+
+.valores_carta{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+}
+
+.estrellas_tipo_carta{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+}
+
+.cabecera_unit{
+    background-color: rgb(134, 185, 221);
+}
+
+.cuerpo_unit{
+    background-color: rgb(118, 182, 227);
+}
+
+.cabecera_effect{
+    background-color: rgb(224, 102, 144);
+}
+
+.cuerpo_effect{
+    background-color: rgb(210, 0, 59);
+}
+
+#cartas_Unit, #cartas_Effect{
+    display: flex;
+    flex-wrap: wrap;
+}
